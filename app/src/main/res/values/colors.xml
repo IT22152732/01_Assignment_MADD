@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_color">#1C2A3A</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="text_color">#333333</color>
+    <color name="text_hint">#999999</color>
+    <color name="input_background">#FFFFFF</color>
+    <color name="input_border">#E0E0E0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="accent_blue">#007AFF</color>
+    <color name="primary_text">#2C3E50</color>
+    <color name="secondary_text">#7B8794</color>
+    <color name="disabled_text">#D1D5DB</color>
+    <color name="background">#F8F9FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="selected_day">#2C3E50</color>
+    <color name="selected_time">#2C3E50</color>
+</resources>

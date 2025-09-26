@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:id="@+id/contentLayout"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <!-- Profile image + edit overlay -->
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile"
+                    android:contentDescription="Profile image"
+                    android:background="@drawable/input_shape"
+                    android:padding="4dp" />
+
+                <ImageButton
+                    android:id="@+id/btnEditImage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="-6dp"
+                    android:layout_marginBottom="-6dp"
+                    android:backgroundTint="#FFFFFF"
+                    android:background="@drawable/button_shape"
+                    android:src="@drawable/ic_edit"
+                    android:contentDescription="Edit"
+                    android:elevation="4dp" />
+            </FrameLayout>
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#111827" />
+
+            <!-- subtitle (email) -->
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+123 856479683"
+                android:textSize="14sp"
+                android:textColor="#6B7280"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- Form fields (read-only) -->
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_shape"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="12dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etSpecialty"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input_shape"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="12dp"
+                android:hint="Specialty"
+                android:inputType="text"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPlace"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input_shape"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="12dp"
+                android:hint="Place"
+                android:inputType="text"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etPatients"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/input_shape"
+                android:drawableStart="@drawable/ic_patients"
+                android:drawablePadding="12dp"
+                android:hint="Patients"
+                android:inputType="text"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/etExperience"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/input_shape"
+                android:drawableStart="@drawable/ic_experience"
+                android:drawablePadding="12dp"
+                android:hint="Experience"
+                android:inputType="text"
+                android:focusable="false"
+                android:clickable="false"
+                android:textColor="#111827"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Center progress overlay -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>
